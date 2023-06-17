@@ -1,0 +1,35 @@
+.container__form {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .container__form {
+        grid-template-columns: 1fr;
+    }
+}
+
+.container__form--input {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.container__form--button{
+    padding: 10px;
+    background-color: hsl(180, 100%, 25%);
+    color: white;
+    border: none;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.container__form--button:hover {
+    background: hsl(180, 100%, 30%);
+    transform: scale(1.1);   
+}
+
+.container__form--button:active {
+    background: hsl(180, 100%, 35%);
+    transform: scale(1.3);  
+}

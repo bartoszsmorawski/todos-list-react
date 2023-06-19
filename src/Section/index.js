@@ -1,9 +1,9 @@
 import "./style.css";
 
-const Section = ({ tittle, body, extraHeaderContent }) => (
+const Section = ({ title, body, extraHeaderContent }) => (
     <section className="container__section">
         <header className="container__header">
-            <h2 className="container__title">{tittle}</h2>
+            <h2 className="container__title">{title}</h2>
             {extraHeaderContent}
         </header>
         <div className="container__specification">
@@ -11,4 +11,5 @@ const Section = ({ tittle, body, extraHeaderContent }) => (
         </div>
     </section>
 );
+
 export default Section;

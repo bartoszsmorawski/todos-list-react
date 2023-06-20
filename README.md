@@ -3,7 +3,7 @@
 
 ## Demo:
 Below is a link that takes you directly to the list website.
-**Tu wstawikć linka!!!**
+**https://bartoszsmorawski.github.io/todos-list-react/**
 
 
 ## General description:

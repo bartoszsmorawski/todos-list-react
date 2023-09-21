@@ -5,6 +5,7 @@ import { GlobalStyle } from "./GlobalStyle";
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { theme } from "./theme";
+import { addTask } from "./features/tasks/tasksSlice";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

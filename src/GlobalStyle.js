@@ -16,4 +16,4 @@ html {
     background-color: ${({ theme }) => theme.color.babygray};
     word-break: break-word;  
   }
-`
+`;

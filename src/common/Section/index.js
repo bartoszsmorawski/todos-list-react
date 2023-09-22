@@ -6,9 +6,7 @@ const Section = ({ title, body, extraHeaderContent }) => (
       <Title>{title}</Title>
       {extraHeaderContent}
     </Header>
-    <Specification>
-      {body}
-      </Specification>
+    <Specification>{body}</Specification>
   </Box>
 );
 

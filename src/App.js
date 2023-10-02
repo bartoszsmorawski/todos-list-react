@@ -1,22 +1,26 @@
 import React from "react";
 import Tasks from "./features/tasks/Tasks";
 import {
-  BroserRouter,
   Link,
   Switch,
   Route,
   BrowserRouter,
 } from "react-router-dom";
+import Author from "./features/author/Author";
 
 export default () => (
   <BrowserRouter>
     <nav>
       <ul>
-        <Link to="/zadania">Zadania</Link>
+        <li><Link to="/zadania">Zadania</Link></li>
+        <li><Link to="/autor">O autorze</Link></li>
       </ul>
       <Switch>
         <Route path="/zadania">
           <Tasks />
+        </Route>
+        <Route path="/autor">
+          <Author />
         </Route>
       </Switch>
     </nav>

@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import { NavLink } from "react-router-dom";
 
 export const List = styled.ul`
   list-style: none;
@@ -66,4 +67,9 @@ export const Button = styled.button`
         background-color: hsl(348, 83%, 45%);
       }
     `}
+`;
+
+export const StyledNavLink = styled(NavLink)`
+  text-decoration: none;
+  color: ${({ theme }) => theme.color.teal};
 `;

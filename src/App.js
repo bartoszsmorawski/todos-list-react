@@ -1,28 +1,33 @@
 import React from "react";
-import Tasks from "./features/tasks/Tasks";
 import {
-  Link,
   Switch,
   Route,
-  BrowserRouter,
+  HashRouter,
+  Redirect,
 } from "react-router-dom";
-import Author from "./features/author/Author";
+import Navigation from "./Navigation";
+import { toAuthor, toTask, toTasks } from "./routes";
+import AuthorPage from "./features/author/AuthorPage";
+import TasksPage from "./features/tasks/TasksPage";
+import TaskPage from "./features/tasks/TaskPage";
+
 
 export default () => (
-  <BrowserRouter>
-    <nav>
-      <ul>
-        <li><Link to="/zadania">Zadania</Link></li>
-        <li><Link to="/autor">O autorze</Link></li>
-      </ul>
+  <HashRouter>
+    <Navigation />
       <Switch>
-        <Route path="/zadania">
-          <Tasks />
+        <Route path={toTask()}>
+          <TaskPage />
         </Route>
-        <Route path="/autor">
-          <Author />
+        <Route path={toTasks()}>
+          <TasksPage />
+        </Route>
+        <Route path={toAuthor()}>
+          <AuthorPage />
+        </Route>
+        <Route path="/">
+          <Redirect to={toTasks()} />
         </Route>
       </Switch>
-    </nav>
-  </BrowserRouter>
+  </HashRouter>
 );

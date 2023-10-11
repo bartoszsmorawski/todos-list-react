@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
-export default styled.button`
+export const ContainerButton = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+`;
+export const Button = styled.button`
   background: transparent;
   color: ${({ theme }) => theme.color.teal};
   border: none;

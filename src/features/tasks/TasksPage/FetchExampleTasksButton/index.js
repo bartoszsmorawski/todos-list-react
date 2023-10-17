@@ -2,7 +2,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchExampleTasks, selectLoading } from "../../tasksSlice";
 import { Button, ContainerButton } from "../Button/styled";
 
-export default () => {
+const FetchExampleTasksButton = () => {
   const dispatch = useDispatch();
   const loading = useSelector(selectLoading);
 
@@ -14,3 +14,5 @@ export default () => {
     </ContainerButton>
   );
 };
+
+export default FetchExampleTasksButton;

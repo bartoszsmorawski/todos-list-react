@@ -13,7 +13,7 @@ export const ButtonsButton = styled.button`
   transition: 1s;
   cursor: pointer;
 
-  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}) {
     flex-basis: 100%;
     margin: 10px;
   }

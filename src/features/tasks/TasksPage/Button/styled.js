@@ -10,8 +10,9 @@ export const Button = styled.button`
   border: none;
   margin: 0 0 0 20px;
   transition: filter 0.3s;
+  cursor:pointer;
 
-  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
     flex-basis: 100%;
     margin: 10px;
   }

@@ -17,7 +17,7 @@ export const theme = {
     babygray: "#eee",
   },
 
-  breakpoint: {
+  breakpoints: {
     mobileMax: 767,
   },
 };
